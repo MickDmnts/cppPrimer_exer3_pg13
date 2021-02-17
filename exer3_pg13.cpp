@@ -4,7 +4,7 @@ void SumNumbersFrom(int start, int end)
 {
 	if (start >= end)
 	{
-		std::cout << "End number is less than Start." << std::endl;
+		std::cout << "Ending number is less than Starting one." << std::endl;
 		return;
 	}
 
@@ -21,7 +21,12 @@ void SumNumbersFrom(int start, int end)
 
 void DecrementNumbers()
 {
-
+	int value = 10;
+	while (value >= 0)
+	{
+		std::cout << value<<std::endl;
+		--value;
+	}
 }
 
 void PrintNumbersBetween(int start, int end)
