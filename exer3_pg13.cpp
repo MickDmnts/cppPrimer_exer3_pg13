@@ -29,9 +29,26 @@ void DecrementNumbers()
 	}
 }
 
-void PrintNumbersBetween(int start, int end)
+void PrintNumbersBetween()
 {
+	std::cout << "Please input two integers." << std::endl;
 
+	int v1 = 0, v2 = 0;
+	std::cin >> v1 >> v2;
+
+	int start = v1, end = v2;
+	if (v1 > v2)
+	{
+		start = v2;
+		end = v1;
+	}
+
+	int val = start;
+	while (val <= end)
+	{
+		std::cout << val << std::endl;
+		++val;
+	}
 }
 
 int main()
@@ -42,7 +59,7 @@ int main()
 	DecrementNumbers(); //Task 1.10
 	system("pause");
 
-	PrintNumbersBetween(1,30); //Task 1.11
+	PrintNumbersBetween(); //Task 1.11
 
 	return 0;
 }
